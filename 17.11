@@ -1,0 +1,53 @@
+#include <iostream>
+using namespace std;
+int main() {
+	//const unsigned int N = 5;//razmer masiva
+	//int arr[N] = {5,6,7,3,0};
+	//for (int i = 0; i < N; i++) {
+	//	cout << arr[i] << ' ';
+	//}
+	/*srand(time(0));
+	int sum = 0;
+	int dob = 1;*/
+
+	//const unsigned int N = 5;//razmer masiva
+	//int arr[N] = {};
+	//for (int i = 0; i < N; i++) {
+	//	arr[i] = rand() % 10;
+	//}
+	//for (int i = 0; i < N; i++) {
+	//	cout << arr[i] << ' ';
+	//}
+	//const unsigned int N = 5;//razmer masiva
+	//int arr[N] = { 5,6,7,3,0 };
+	//for (int i = 0; i < N; i++) {
+	//	/*cout << arr[i] << ' ';*/
+	//	cin >> arr[i];
+	//	sum += arr[i];
+	//	dob *= arr[i];
+	//}
+
+	//for (int i = 0; i < N; i++) {
+	//		cout << arr[i] << ' ';
+	//	}
+	//cout << sum << endl;
+	//cout << dob << endl;
+
+	const unsigned int N = 5;
+	int arr[N]{};
+	for (int i = 0; i < N; i++) {
+		cin >> arr[i];
+	}
+	int max = arr[0];
+	int min = arr[0];
+	for (int i = 0; i < N; i++) {
+		if (arr[i] > max) {
+			max = arr[i];
+		}
+		if (arr[i] < min) {
+			min = arr[i];
+		}
+	}
+	cout << max << endl;
+	cout << min;
+}
