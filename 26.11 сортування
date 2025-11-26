@@ -1,0 +1,29 @@
+#include <iostream>
+using namespace std;
+
+int main() 
+{
+	const unsigned int N = 10;
+	int arr[N]{};
+	srand(time(0));
+	for (int i = 0; i < N; i++)
+	{
+		arr[i] = rand() % 10;
+		cout << arr[i] << ' ';
+	}
+
+	for (int i = 0; i < N-1; i++)
+	{
+		if (arr[i] > arr[i + 1])
+		{
+			int temp = arr[i];
+			arr[i] = arr[i + 1];
+			arr[i + 1] = temp;
+			i = -1;
+		}
+	}
+	for (int i = 0; i < N; i++) 
+	{
+		cout << arr[i];
+	}
+}
